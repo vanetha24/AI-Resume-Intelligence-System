@@ -1,8 +1,13 @@
 # 🤖 AI-Powered Resume Intelligence and Job Matching System
+
 An AI-powered resume analysis and job matching system that analyzes resumes, evaluates ATS compatibility, matches candidates with job descriptions, identifies skill gaps, provides resume improvement recommendations, and recommends suitable job roles based on the candidate's profile.
 
+---
+
 ## 📌 Overview
+
 Finding the right job and understanding whether a resume matches a job description can be difficult for candidates.
+
 This project uses **Natural Language Processing (NLP)**, **Sentence Transformers**, **semantic similarity**, and **skill-based analysis** to provide an intelligent resume evaluation and job recommendation system.
 
 The application allows users to:
@@ -21,8 +26,13 @@ The application allows users to:
 * Generate a downloadable PDF analysis report
 
 The application is developed using **Python and Streamlit**.
+
+---
+
 # ✨ Key Features
+
 ## 📄 1. Resume Analysis
+
 Upload a resume in:
 
 * PDF
@@ -41,7 +51,11 @@ The system extracts:
 * Achievements
 * Publications
 * Technical skills
+
+---
+
 ## 🎯 2. Single Job Analysis
+
 Users can paste a specific job description and compare it against their resume.
 
 The system analyzes:
@@ -53,14 +67,21 @@ The system analyzes:
 * Additional skills
 * Skill categories
 * Overall compatibility
+
 ### Matching Formula
+
 The job compatibility score combines:
 
+```text
 65% Semantic Similarity
 +
 35% Explicit Skill Match
+```
 
 Semantic similarity is calculated using a **Sentence Transformer model**, while explicit skill matching is performed using the project's skill database.
+
+---
+
 # 🤖 3. ATS Compatibility Analysis
 
 The system provides a transparent **ATS Compatibility Score out of 100**.
@@ -79,6 +100,7 @@ The score considers:
 | **Total**                   | **100%** |
 
 ### ATS Analysis Includes
+
 * ATS Compatibility Score
 * Keyword match analysis
 * Section completeness
@@ -90,30 +112,48 @@ The score considers:
 * Improvement recommendations
 
 > **Note:** ATS scoring varies between Applicant Tracking Systems. This project provides a transparent compatibility estimate rather than claiming to reproduce a specific company's proprietary ATS algorithm.
+
+---
+
 # 🔍 4. Skill Gap Analysis
+
 The system compares the candidate's skills with the skills required by the target job.
+
 ### Example
+
+```text
 Matched Skills
 ---------------
 Python
 Machine Learning
 NLP
 Pandas
+
 Missing Skills
 --------------
 SQL
 Docker
 AWS
+```
 
 The system also identifies:
+
 * Critical skill gaps
 * Missing skill categories
 * Additional skills already present in the resume
+
+---
+
 # 📈 5. Resume Improvement Intelligence
+
 The system evaluates how the resume can be improved for the selected job.
+
 It provides:
+
 ### Resume Improvement Score
+
 A score based on factors such as:
+
 * Job skill coverage
 * Summary quality
 * Projects
@@ -135,11 +175,13 @@ Provides actionable suggestions for improving the resume.
 
 The system does **not** recommend adding skills that the candidate does not actually possess.
 
+---
 
 # 📊 6. Multi-Job Recommendation
 
 Users can compare a single resume against **multiple job descriptions**.
 
+```text
                  Resume
                     │
         ┌───────────┼───────────┐
@@ -156,6 +198,7 @@ Users can compare a single resume against **multiple job descriptions**.
           ┌─────────┼─────────┐
           ▼         ▼         ▼
        Best Job   Job 2     Job 3
+```
 
 Each job receives a compatibility score and is ranked accordingly.
 
@@ -168,6 +211,8 @@ The system displays:
 * Matched skills
 * Missing skills
 * Additional skills
+
+---
 
 # 💼 7. Automatic Recommended Jobs
 
@@ -195,6 +240,7 @@ The resume is compared against a built-in job-role database containing multiple 
 
 ### Example Recommended Roles
 
+```text
 Machine Learning Engineer
 AI Engineer
 Data Scientist
@@ -206,6 +252,7 @@ Data Engineer
 Cloud Engineer
 Cybersecurity Analyst
 Business Analyst
+```
 
 The system ranks roles according to the candidate's resume and provides:
 
@@ -219,7 +266,11 @@ The system ranks roles according to the candidate's resume and provides:
 
 The job-role database can be expanded by adding new roles to:
 
+```text
 data/jobs.csv
+```
+
+---
 
 # 🧠 AI / NLP Approach
 
@@ -227,6 +278,7 @@ The project uses a combination of **rule-based NLP and transformer-based semanti
 
 ### Resume Processing
 
+```text
 Resume
    ↓
 PDF/DOCX Text Extraction
@@ -238,9 +290,11 @@ Section Detection
 Skill Extraction
    ↓
 Resume Profile
+```
 
 ### Job Matching
 
+```text
 Resume Text
      ↓
 Sentence Transformer
@@ -256,6 +310,9 @@ Semantic Similarity
 Skill Matching
      ↓
 Compatibility Score
+```
+
+---
 
 # 🛠️ Technology Stack
 
@@ -303,8 +360,11 @@ Compatibility Score
 
 * Pytest
 
+---
+
 # 📁 Project Structure
 
+```text
 AI-Resume-Intelligence-System/
 │
 ├── app.py
@@ -346,9 +406,105 @@ AI-Resume-Intelligence-System/
 │
 ├── uploads/
 └── models/
+```
+
+---
+
+# ⚙️ Installation
+
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/vanetha24/AI-Resume-Intelligence-System.git
+```
+
+Navigate into the project:
+
+```bash
+cd AI-Resume-Intelligence-System
+```
+
+---
+
+## 2. Create a Virtual Environment
+
+### Windows
+
+```bash
+python -m venv venv
+```
+
+Activate it:
+
+```bash
+venv\Scripts\activate
+```
+
+### Linux / macOS
+
+```bash
+python3 -m venv venv
+```
+
+Activate:
+
+```bash
+source venv/bin/activate
+```
+
+---
+
+## 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# ▶️ Run the Application
+
+Start the Streamlit application:
+
+```bash
+streamlit run app.py
+```
+
+The application will open in your browser.
+
+Usually:
+
+```text
+http://localhost:8501
+```
+
+---
+
+# 🧪 Run Tests
+
+The project includes unit tests for important components.
+
+Run:
+
+```bash
+pytest
+```
+
+Tests cover areas including:
+
+* Resume parsing
+* Skill extraction
+* Resume analysis
+* Skill matching
+* ATS scoring
+* Resume improvement
+* PDF report generation
+
+---
 
 # 🔄 Application Workflow
 
+```text
                 Upload Resume
                      │
                      ▼
@@ -382,6 +538,9 @@ AI-Resume-Intelligence-System/
                      │
                      ▼
               PDF Report
+```
+
+---
 
 # 📊 Project Outputs
 
@@ -405,6 +564,8 @@ The application provides:
 * Career areas
 * Downloadable PDF report
 
+---
+
 # 🔐 Privacy
 
 Resume files may contain personal information.
@@ -417,6 +578,8 @@ For local usage:
 * Keep generated/uploaded resume files outside version control.
 
 The `.gitignore` file excludes generated and local files from Git tracking.
+
+---
 
 # 🚀 Future Improvements
 
@@ -436,6 +599,8 @@ Possible future enhancements include:
 * Cloud deployment
 * User authentication and profile management
 
+---
+
 # 🎯 Use Cases
 
 This system can be useful for:
@@ -449,6 +614,8 @@ This system can be useful for:
 * Skill-gap analysis
 * Career recommendation platforms
 
+---
+
 # ⚠️ Disclaimer
 
 The ATS Compatibility Score and job compatibility scores are intended as **decision-support indicators**.
@@ -458,7 +625,7 @@ They are not official scores from any specific Applicant Tracking System, employ
 Recommendations should be used as guidance and candidates should only claim skills and experience they genuinely possess.
 
 
-### 👨‍💻 Author : VANETHA A C K
+👨‍💻 Author : VANETHA A C K
 
 Connect With Me
 
@@ -467,6 +634,7 @@ Connect With Me
 • GitHub: https://github.com/vanetha24
 
 • Email: vvanetha633@gmail.com
+
 
 ## ⭐ If you find this project useful
 
