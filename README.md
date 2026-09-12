@@ -1,11 +1,8 @@
 # 🤖 AI-Powered Resume Intelligence and Job Matching System
-
 An AI-powered resume analysis and job matching system that analyzes resumes, evaluates ATS compatibility, matches candidates with job descriptions, identifies skill gaps, provides resume improvement recommendations, and recommends suitable job roles based on the candidate's profile.
 
 ## 📌 Overview
-
 Finding the right job and understanding whether a resume matches a job description can be difficult for candidates.
-
 This project uses **Natural Language Processing (NLP)**, **Sentence Transformers**, **semantic similarity**, and **skill-based analysis** to provide an intelligent resume evaluation and job recommendation system.
 
 The application allows users to:
@@ -24,11 +21,8 @@ The application allows users to:
 * Generate a downloadable PDF analysis report
 
 The application is developed using **Python and Streamlit**.
-
 # ✨ Key Features
-
 ## 📄 1. Resume Analysis
-
 Upload a resume in:
 
 * PDF
@@ -47,9 +41,7 @@ The system extracts:
 * Achievements
 * Publications
 * Technical skills
-
 ## 🎯 2. Single Job Analysis
-
 Users can paste a specific job description and compare it against their resume.
 
 The system analyzes:
@@ -61,9 +53,7 @@ The system analyzes:
 * Additional skills
 * Skill categories
 * Overall compatibility
-
 ### Matching Formula
-
 The job compatibility score combines:
 
 65% Semantic Similarity
@@ -71,8 +61,6 @@ The job compatibility score combines:
 35% Explicit Skill Match
 
 Semantic similarity is calculated using a **Sentence Transformer model**, while explicit skill matching is performed using the project's skill database.
-
-
 # 🤖 3. ATS Compatibility Analysis
 
 The system provides a transparent **ATS Compatibility Score out of 100**.
@@ -91,7 +79,6 @@ The score considers:
 | **Total**                   | **100%** |
 
 ### ATS Analysis Includes
-
 * ATS Compatibility Score
 * Keyword match analysis
 * Section completeness
@@ -103,20 +90,15 @@ The score considers:
 * Improvement recommendations
 
 > **Note:** ATS scoring varies between Applicant Tracking Systems. This project provides a transparent compatibility estimate rather than claiming to reproduce a specific company's proprietary ATS algorithm.
-
 # 🔍 4. Skill Gap Analysis
-
 The system compares the candidate's skills with the skills required by the target job.
-
 ### Example
-
 Matched Skills
 ---------------
 Python
 Machine Learning
 NLP
 Pandas
-
 Missing Skills
 --------------
 SQL
@@ -124,21 +106,14 @@ Docker
 AWS
 
 The system also identifies:
-
 * Critical skill gaps
 * Missing skill categories
 * Additional skills already present in the resume
-
 # 📈 5. Resume Improvement Intelligence
-
 The system evaluates how the resume can be improved for the selected job.
-
 It provides:
-
 ### Resume Improvement Score
-
 A score based on factors such as:
-
 * Job skill coverage
 * Summary quality
 * Projects
