@@ -624,6 +624,26 @@ They are not official scores from any specific Applicant Tracking System, employ
 
 Recommendations should be used as guidance and candidates should only claim skills and experience they genuinely possess.
 
+📸 View Project Screenshots
+Explore the key features and outputs of the AI-Powered Resume Intelligence & Job Matching System.
+🔍 Click to view project screenshots in the screenshorts folder
+1. Resume Upload & Processing
+2. Resume Intelligence
+3. Job Compatibility Analysis
+4. ATS Compatibility Analysis
+5. ATS Keyword Analysis
+6. Skill Matching & Skill Gap Analysis
+7. Skill Category Analysis
+8. Resume Improvement Intelligence
+9. Resume Strength & Section Analysis
+10. Resume Improvement Recommendations & Report
+11. Multi-Job Recommendation
+12. Multiple Job Descriptions
+13. Multi-Job Compatibility Ranking
+14. Detailed Job Analysis
+15. Automatic Job Recommendations
+16. Recommended Job Compatibility Ranking
+17. Recommended Career Areas & Career Direction
 
 👨‍💻 Author : VANETHA A C K
 
