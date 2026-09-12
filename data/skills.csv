@@ -1,0 +1,59 @@
+skill,category,canonical
+python,programming,python
+java,programming,java
+c++,programming,c++
+c#,programming,c#
+javascript,programming,javascript
+typescript,programming,typescript
+html,frontend,html
+css,frontend,css
+react,frontend,react
+angular,frontend,angular
+sql,database,sql
+mysql,database,mysql
+postgresql,database,postgresql
+mongodb,database,mongodb
+sqlite,database,sqlite
+machine learning,ai,machine learning
+ml,ai,machine learning
+deep learning,ai,deep learning
+natural language processing,ai,nlp
+nlp,ai,nlp
+computer vision,ai,computer vision
+generative ai,ai,generative ai
+transformers,ai,transformers
+bert,ai,bert
+llm,ai,llm
+llms,ai,llm
+large language models,ai,llm
+prompt engineering,ai,prompt engineering
+embeddings,ai,embeddings
+vector search,ai,vector search
+rag,ai,rag
+retrieval augmented generation,ai,rag
+langchain,ai,langchain
+tensorflow,ai,tensorflow
+pytorch,ai,pytorch
+scikit-learn,ai,scikit-learn
+pandas,data,pandas
+numpy,data,numpy
+matplotlib,data,matplotlib
+seaborn,data,seaborn
+power bi,data,power bi
+tableau,data,tableau
+excel,data,excel
+docker,devops,docker
+kubernetes,devops,kubernetes
+git,tools,git
+github,tools,github
+linux,tools,linux
+fastapi,backend,fastapi
+flask,backend,flask
+django,backend,django
+rest api,backend,rest api
+aws,cloud,aws
+azure,cloud,azure
+gcp,cloud,gcp
+streamlit,framework,streamlit
+faiss,vector_database,faiss
+chromadb,vector_database,chromadb
